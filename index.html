@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sorteador</title>
+</head>
+<body>
+    <main>
+        <img src="img/dice.png" alt="dados para sorteio">
+        <h1>Sorteador de<br>Números Aleatórios</h1>
+        <h2 class="drawn-results-title">número sorteado</h2>
+        <div class="drawn-number">
+            <h2 class="drawn-results"> </h2>
+        </div>
+        <p class="title">Sortear um número</p>
+        <div class="inputs-container">
+            <div class="nMim">
+                <label class="min">número mínimo</label><br>
+                <input onclick="clearTable()" class="input-min" type="text">
+            </div>
+            <div class="nMax">
+                <label class="max">número máximo</label><br>
+                <input onclick="clearTable()" class="input-max" type="text">
+            </div>
+        </div>
+        <button class="draw-button">Sortear</button>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

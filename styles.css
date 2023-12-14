@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background-color: #000;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
+    font-weight: bolder;
+    font-size: 60px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 60px;
+}
+
+p {
+    margin-top: 30px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.inputs-container {
+    margin-top: 10px;
+    display: flex;
+}
+
+label {
+    font-size: 12px;
+    color:#FFFFFF;
+    padding-left: 20px;
+}
+
+.input-min, .input-max {
+    width: 150px;
+    height: 40px;
+    margin: 0 15px 30px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    /* font-size: 16px; */
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #404040;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #c5c5c5;
+}
+
+.draw-button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #AEC346;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.draw-button:hover {
+    opacity: 0.9;
+}
+
+.draw-button:active {
+    opacity: 0.8;
+}
+
+.drawn-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    margin-top: 5px;
+    background-color: #000000;
+    border-radius: 50px;
+    border: 1px solid #FFFFFF;
+}
+
+.drawn-results-title {
+    margin-top: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #AEC346;
+}
+
+.drawn-results {
+    font-size: 32px;
+    color: #cccccc;
+    background-color: #000000;
+}
+
+@media screen and (max-width: 360px) {
+
+    .inputs-container {
+        display:flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 150px;
+        height: auto;
+        margin-top: 25px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+}
